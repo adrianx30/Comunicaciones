@@ -19,22 +19,22 @@ public class Int_Servidor {
     
     
     public void Int_Servidor(){
-        JFrame a=new JFrame("Servidor");
+        JFrame a=new JFrame("Servidor Preguntón!");
         a.setLayout(null);
-        a.setSize(500, 500);
+        a.setSize(280,280);
         a.setLocationRelativeTo(null);
         a.setVisible(true);
         
         
-        JLabel serv=new JLabel("Servidor");
+        JLabel serv=new JLabel("Servidor Preguntón!");
         serv.setVisible(true);
-        serv.setBounds(30,80, 200, 30);
+        serv.setBounds(45,30, 200, 30);
         a.add(serv);
         
         JTextArea tserv=new JTextArea();
-        tserv.setBounds(30, 120, 250, 250);
+        tserv.setBounds(30,70, 150,150);
         tserv.setVisible(true);
-        tserv.enable(false);
+        tserv.enable(true);
         tserv2=tserv;
         a.add(tserv);
 

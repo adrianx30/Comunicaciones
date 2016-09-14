@@ -5,6 +5,7 @@
  */
 package comunicacion_socket;
 
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
@@ -21,12 +22,14 @@ public class Interfaz_Datos {
     JTextField tport;
     
     public void Interfaz_Datos(){
-    
+    ImageIcon g = new ImageIcon("gradient-wallpaper-18.jpg");
         JFrame a=new JFrame("Inicial");
+        a.setContentPane(new JLabel(new ImageIcon("gradient-wallpaper-18.jpg")));
         a.setLayout(null);
         a.setSize(500, 500);
         a.setLocationRelativeTo(null);
         a.setVisible(true);
+        
         
         
         

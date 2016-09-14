@@ -44,56 +44,56 @@ public class Int_datos extends javax.swing.JFrame {
         ip_text = new javax.swing.JLabel();
         ip = new javax.swing.JTextField();
         btn1 = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        ip_text1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Pregunton!");
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        port_text.setText("Introduzca Puerto de acceso");
+        port_text.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        port_text.setForeground(new java.awt.Color(255, 255, 255));
+        port_text.setText("Puerto de acceso");
+        getContentPane().add(port_text, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 140, -1, -1));
 
         puerto.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 puertoActionPerformed(evt);
             }
         });
+        getContentPane().add(puerto, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 180, 122, -1));
 
-        ip_text.setText("Introduzca direccion ip del servidor");
+        ip_text.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        ip_text.setForeground(new java.awt.Color(255, 255, 255));
+        ip_text.setText("Ip del servidor");
+        getContentPane().add(ip_text, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 140, -1, -1));
+        getContentPane().add(ip, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 180, 183, -1));
 
-        btn1.setText("Continuar");
+        btn1.setBackground(new java.awt.Color(204, 255, 204));
+        btn1.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
+        btn1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/comunicacion_socket/ok.png"))); // NOI18N
+        btn1.setText("Aceptar");
         btn1.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         btn1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn1ActionPerformed(evt);
             }
         });
+        getContentPane().add(btn1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 230, 130, 40));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 41, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btn1)
-                    .addComponent(ip, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(port_text)
-                    .addComponent(puerto, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(ip_text))
-                .addGap(141, 141, 141))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(25, 25, 25)
-                .addComponent(port_text)
-                .addGap(28, 28, 28)
-                .addComponent(puerto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(39, 39, 39)
-                .addComponent(ip_text)
-                .addGap(29, 29, 29)
-                .addComponent(ip, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 39, Short.MAX_VALUE)
-                .addComponent(btn1)
-                .addGap(33, 33, 33))
-        );
+        jLabel2.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 55)); // NOI18N
+        jLabel2.setText("Preguntón!");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 40, 360, -1));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/comunicacion_socket/gradient-wallpaper-18.jpg"))); // NOI18N
+        jLabel1.setText("jLabel1");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 470, 290));
+
+        ip_text1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        ip_text1.setForeground(new java.awt.Color(255, 255, 255));
+        ip_text1.setText("Ip del servidor");
+        getContentPane().add(ip_text1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 140, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -171,6 +171,9 @@ public class Int_datos extends javax.swing.JFrame {
     private javax.swing.JButton btn1;
     private javax.swing.JTextField ip;
     private javax.swing.JLabel ip_text;
+    private javax.swing.JLabel ip_text1;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel port_text;
     private javax.swing.JTextField puerto;
     // End of variables declaration//GEN-END:variables

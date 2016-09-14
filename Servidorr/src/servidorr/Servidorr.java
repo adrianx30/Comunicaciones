@@ -36,24 +36,19 @@ public class Servidorr {
             while(estado=true){
                 i=i+1;
             
-            System.out.println("im here");
             socket=new Socket();
             socket=server.accept();
             String ip=socket.getInetAddress().toString();
             System.out.println(ip);
             
-          //  entrada=new BufferedReader(new InputStreamReader(socket.getInputStream()));
-           // String mensaje=entrada.readLine();
-           // System.out.println(mensaje);
             suma=suma+" \nEscuchando......";
             
-            System.out.println("hola");
+            
             System.out.println("Escuchado puerto"+puerto);
             System.out.println("en espera......");
             
             DataInputStream in = new DataInputStream(socket.getInputStream());
             String d=in.readUTF();
-            System.out.println(d+" sdfksfjklsd");
             if(d.equals("Peticion")){
                   
             Preguntas b=new Preguntas();
@@ -65,14 +60,12 @@ public class Servidorr {
             out.writeObject(k);
             }
             else{
-            //salida=new DataOutputStream(socket.getOutputStream());
             out=new ObjectOutputStream(socket.getOutputStream());
-            out.writeObject("holi");
+            
             
             }
             }
             socket.close();
-            //salida.writeUTF("caraja");
             
             try{
                 System.out.println("a");
@@ -96,9 +89,6 @@ public class Servidorr {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-       /* Servidorr a=new Servidorr();
-        a.Iniciar();
-               */
         
         Int_Servidor serv=new Int_Servidor();
         serv.Int_Servidor();

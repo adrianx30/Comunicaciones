@@ -5,6 +5,7 @@
  */
 package comunicacion_socket;
 
+import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JButton;
@@ -36,7 +37,7 @@ public class int_puntaje2 implements ActionListener {
         pregBad=y;
     
     JFrame a=new JFrame("Puntaje");
-    a.setSize(400,400);
+    a.setSize(370,300);
     a.setLocationRelativeTo(null);
     a.setLayout(null);
     a.setVisible(true);
@@ -49,32 +50,36 @@ public class int_puntaje2 implements ActionListener {
     a.add(puntaje);
     
     JLabel pregood=new JLabel("Preguntas Acertadas");
-    pregood.setBounds(40, 130, 220, 20);
+    pregood.setBounds(40, 100, 220, 20);
     pregood.setVisible(true);
     a.add(pregood);
     
     JTextField pregwin=new JTextField();
-    pregwin.setBounds(270, 130, 50, 20);
+    pregwin.setBounds(60, 140, 50, 20);
     pregwin.setVisible(true);
+    pregwin.setEditable(false);
     a.add(pregwin);
     wins=pregwin;
     
     JLabel preBad=new JLabel("Preguntas Fallidas");
-    preBad.setBounds(40, 200, 220, 20);
+    preBad.setBounds(200, 100, 220, 20);
     preBad.setVisible(true);
     a.add(preBad);
     
     JTextField pregnwin=new JTextField();
-    pregnwin.setBounds(270, 200, 50, 20);
+    pregnwin.setBounds(220, 140, 50, 20);
     pregnwin.setVisible(true);
+    pregnwin.setEditable(false);
     a.add(pregnwin);
     loss=pregnwin;
     
     JButton sig=new JButton("Continuar");
-    sig.setBounds(140, 270, 120, 30);
+    sig.setBounds(100, 190, 120, 30);
     sig.setVisible(true);
+    a.setBackground(Color.yellow);
     a.add(sig);
     sig.addActionListener(this);
+    
     rsig=sig;
     
     

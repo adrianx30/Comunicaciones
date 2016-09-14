@@ -10,6 +10,7 @@ import java.awt.Frame;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Random;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -44,17 +45,19 @@ public class Interfaz_Preguntas implements ActionListener{
      perdidas=pregnw;
        
        
-    JFrame a=new JFrame("Preguntas");
+    JFrame a=new JFrame("Preguntón!");
     a.setLayout(null);
-    a.setSize(500,500);
+    a.setSize(800,330);
     a.setLocationRelativeTo(null);
     a.setVisible(true);
+    a.setBackground(Color.GREEN);
+    
    
     a1=a;
     
     
     JLabel lbienv=new JLabel("Bienvenidos");
-    lbienv.setBounds(150, 40, 300, 30);
+    lbienv.setBounds(320, 40, 300, 30);
     lbienv.setVisible(true);
     rlbienv=lbienv;
     a.add(lbienv);
@@ -62,38 +65,40 @@ public class Interfaz_Preguntas implements ActionListener{
     
     JButton bt1=new JButton();
     bt1.setVisible(true);
-    bt1.setBounds(80, 110, 330, 40);
+    bt1.setBounds(40, 110, 330, 40);
     bt1.addActionListener(this);
+  
     rbt1=bt1;
     
     a.add(bt1);
     
      JButton bt2=new JButton();
     bt2.setVisible(true);
-    bt2.setBounds(80, 190, 330, 40);
+    bt2.setBounds(390, 110, 330, 40);
     bt2.addActionListener(this);
     rbt2=bt2;
     a.add(bt2);
     
      JButton bt3=new JButton();
     bt3.setVisible(true);
-    bt3.setBounds(80, 270, 330, 40);
+    bt3.setBounds(40, 160, 330, 40);
     bt3.addActionListener(this);
     rbt3=bt3;
     a.add(bt3);
     
      JButton bt4=new JButton();
     bt4.setVisible(true);
-    bt4.setBounds(80, 350, 330, 40);
+    bt4.setBounds(390, 160, 330, 40);
     bt4.addActionListener(this);
     rbt4=bt4;
     a.add(bt4);
     
     
-      JButton sig=new JButton("siguiente");
+    JButton sig=new JButton("Continuar");
     sig.setVisible(true);
-    sig.setBounds(350, 420, 120, 20);
+    sig.setBounds(280, 230, 200, 30);
     sig.addActionListener(this);
+    sig.setBackground(Color.yellow);
     rsig=sig;
     a.add(sig);
     
